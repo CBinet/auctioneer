@@ -1,0 +1,63 @@
+.container {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; */
+}
+
+.box {
+    border: 3px solid #666;
+    background-color: whitesmoke;
+    border-radius: .5em;
+    padding: 10px;
+    cursor: move;
+}
+
+.box.over {
+    border: 3px dotted #666;
+}
+
+.box.disabled {
+    background-color: lightgray;
+}
+
+.box.active {
+    background-color: lightblue;
+}
+
+.box.tank {
+    color: blue;
+}
+
+.box.support {
+    color: yellow;
+}
+
+.box.healer {
+    color: green;
+}
+
+.box.dps {
+    color: red;
+}
+
+.box.battlemount {
+    color: grey;
+}
+
+div.box {
+    cursor: grab;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
