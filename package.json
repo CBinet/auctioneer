@@ -1,5 +1,5 @@
 {
-  "name": "idle-discord-bot",
+  "name": "auctioneer",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -7,13 +7,16 @@
     "start": "node lib/src/main.js",
     "build": "tsc",
     "serve": "npm run build && npm run start",
-    "test": "tsc && jest"
+    "test": "tsc && jest",
+    "commands": "node src/commands.js",
+    "deploy": "scp -r ~/Desktop/Stuff/Github/auctioneer/lib/src pi@192.168.2.18:~/Charles/auctioneer/lib",
+    "deploy-node-modules": "scp -r ~/Desktop/Stuff/Github/auctioneer/node_modules pi@192.168.2.18:~/Charles/auctioneer"
   },
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "discord.js": "^13.8.1",
+    "discord.js": "14.2.0",
     "fs": "^0.0.1-security"
   },
   "devDependencies": {
